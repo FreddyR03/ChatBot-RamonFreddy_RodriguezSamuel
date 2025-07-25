@@ -8,10 +8,15 @@
 </head>
 <body>
     <div class="container">
+        <img src="./imagen.png" alt="">
         <h1>ChatBot</h1>
         <h2>Resuelvo todas tus dudas sobre el desarrollo móvil</h2>
-        <textarea name="name" id="" cols="30" rows="10"></textarea><br>
-        <button type="submit">Enviar</button>
+         <form id="chat-form">
+            <input type="text" id="user-input" placeholder="Escribe tu pregunta..." ><br>
+            <button type="submit">Enviar</button>
+        </form>
+        <br>
+        <div id="messages"></div><br>
     </div>
     <script src="script.js"></script>
 </body>
