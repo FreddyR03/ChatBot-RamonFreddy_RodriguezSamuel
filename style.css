@@ -1,0 +1,59 @@
+html{
+    font-size: 100%;    /*1rem = 16px por defecto*/
+}
+
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(./imagen.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: white;
+    
+    
+}
+.container{
+    text-align: center;
+    border: 0.125rem solid rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(0.9375rem);
+    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.2);
+    color: white;
+    border-radius: 1rem;
+    padding: 20px 20px;
+}
+
+.container h1,h2,textarea{
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.container h1{
+    font-size: 2.5rem;
+    
+}
+
+.container textarea{
+    background-color: rgb(228, 228, 231);
+}
+
+.container h2{
+    font-size: 1rem
+}
+
+.container button{
+    width: 30%;
+    font-size: 1rem;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
