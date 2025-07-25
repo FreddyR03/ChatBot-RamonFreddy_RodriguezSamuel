@@ -1,5 +1,5 @@
-# 🤖 Chatbot API experto en Python
-Este proyecto es una API REST basada en FastAPI que funciona como un chatbot experto en Python. Utiliza el modelo Mistral a través de OpenRouter (compatible con la API de OpenAI) para generar respuestas conversacionales.
+# 🤖 Chatbot API experto en resolver dudas sobre el desarrollo móvil
+Este proyecto es una API REST basada en FastAPI que funciona como un chatbot experto en resolver dudas sobre el desarrollo móvil. Utiliza el modelo Mistral a través de OpenRouter (compatible con la API de OpenAI) para generar respuestas conversacionales.
 
 ## 🚀 Requisitos
 - Python 3.8 o superior
