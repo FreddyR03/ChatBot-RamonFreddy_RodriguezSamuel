@@ -1,19 +1,19 @@
 const form = document.getElementById('chat-form');
 const input = document.getElementById('user-input');
-const messages = document.getElementById('messages');
+const result = document.getElementById('result');
 
-function addMessage(text, sender) {
+function addResult(text, sender) {
     const div = document.createElement('div');
-    div.className = 'message ' + sender;
+    div.className = 'result ' + sender;
     div.textContent = (sender === 'user' ? 'Tú: ' : 'Bot: ') + text;
-    messages.appendChild(div);
+    result.appendChild(div);
 }
 
 form.addEventListener('submit', async (e) => {
     e.preventDefault();
     const pregunta = input.value.trim();
     if (!pregunta) return;
-    addMessage(pregunta, 'user');
+    addResult(pregunta, 'user');
     input.value = '';
     try {
         const res = await fetch('http://127.0.0.1:8000/chat', {
@@ -23,8 +23,8 @@ form.addEventListener('submit', async (e) => {
         });
         if (!res.ok) throw new Error('Error en la respuesta del servidor');
         const data = await res.json();
-        addMessage(data.respuesta, 'bot');
+        addResult(data.respuesta, 'bot');
     } catch (err) {
-        addMessage('Error: ' + err.message, 'bot');
+        addResult('Error: ' + err.result, 'bot');
     }
 });
