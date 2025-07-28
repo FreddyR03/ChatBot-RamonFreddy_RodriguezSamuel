@@ -9,20 +9,6 @@ html{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.container #result{
-    height: 100px;           
-    max-height: 150px;       
-    overflow-y: auto;     
-    background: white;
-    color: black;
-    padding: 10px;
-    margin-bottom: 15px;
-    border-radius: 5px;
-    width: 70%;
-    max-width: 70%;
-    margin: 0 auto;
-}
-
 body{
     display: flex;
     justify-content: center;
@@ -41,6 +27,7 @@ body{
     box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.2);
     color: white;
     border-radius: 1rem;
+    max-width: 40%;
     padding: 20px 20px;
 }
 
@@ -73,8 +60,50 @@ body{
     cursor: pointer;
 }
 
+
+.container #result {
+    height: 250px;             
+    overflow-y: auto;          
+    background: white;
+    color: black;
+    padding: 10px;
+    margin: 15px auto;
+    border-radius: 5px;
+    width: 60%;
+    max-width: 60%;
+    display: flex;
+    flex-direction: column; 
+    gap: 10px;                  
+}
+
+.result.user {
+    text-align: right;
+    background: #e1f5fe;
+    color: #000;
+    padding: 5px 8px;
+    border-radius: 8px;
+    align-self: flex-end;
+    max-width: 80%;
+}
+
+.result.bot {
+    text-align: left;
+    background: #f1f1f1;
+    color: #000;
+    padding: 5px 8px;
+    border-radius: 8px;
+    align-self: flex-start;
+    max-width: 80%;
+}
+
 .container img{
     width: 50%;
     margin-bottom: -80px;
     margin-top: -30px;
+}
+
+@media  (max-width: 992px){
+    .container{
+        max-width: 70%;
+    }
 }
