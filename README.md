@@ -10,12 +10,24 @@ Este proyecto es una API REST basada en FastAPI que funciona como un chatbot exp
 
 ## 📁 Estructura del proyecto
 ```
-chatbot-ia_python/  
-├── main.py           # API con FastAPI  
-├── config.py         # Contiene el PROMPT_SISTEMA  
-├── .env              # Variables de entorno  
-├── requirements.txt  # Dependencias  
-├── Dockerfile        # Configuración para Docker  
-└── README.md  
+chatbot/
+├── .vscode/
+│ └── tasks.json  # Tarea para ejecutar FastAPI en VS Code
+├── venv/ # Entorno virtual (no subir a git)
+│ ├── bin/ 
+│ ├── Python3 (Linux) o Script para windows
+│ └── ...
+├── pycache/ # Archivos compilados (ignorar)
+├── chatbot.py # API principal con FastAPI (uvicorn chatbot:app)
+├── config.py # Configuración y constantes
+├── index.html # Interfaz del chatbot (frontend)
+├── style.css # Estilos del frontend
+├── script.js # Lógica del frontend (fetch a la API)
+├── imagen.jpg / imagen.png # Recursos gráficos
+├── .env # Variables de entorno (API keys, etc.)
+├── .env.example # Ejemplo de variables de entorno
+├── requirements.txt # Dependencias de Python
+├── README.md # Documentación del proyecto
+└── version.txt # Versión del proyecto 
 ```
 
