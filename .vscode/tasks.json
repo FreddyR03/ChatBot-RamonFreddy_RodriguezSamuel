@@ -1,0 +1,28 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Run FastAPI",
+            "type": "shell",
+            "windows": {
+                "command": "venv\\Scripts\\python.exe -m uvicorn chatbot:app --reload"
+            },
+            "linux": {
+                "command": "venv/bin/python3 -m uvicorn chatbot:app --reload"
+            },
+            "osx": {
+                "command": "venv/bin/python3 -m uvicorn chatbot:app --reload"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            },
+            "problemMatcher": []
+        }
+    ]
+}
+
